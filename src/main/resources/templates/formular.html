@@ -11,10 +11,11 @@
 </head>
 <body>
 <div class="detail">
-    <form class="vizitka">
+    <form class="vizitka" th:action="@{/nova}" method="post">
+
         <div class="row">
             <label for="jmeno">Jméno</label>
-            <input type="text" id="jmeno" name="jmeno" maxlength="100" required />
+            <input type="text" id="jmeno" name="celeJmeno" maxlength="100" required/>
         </div>
         <div class="row">
             <label for="firma">Firma</label>
